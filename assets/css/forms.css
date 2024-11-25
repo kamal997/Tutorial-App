@@ -1,0 +1,95 @@
+
+
+label {
+    display: block;
+}
+
+label.required::after {
+    content: " (Erforderliches Feld)";
+    font-style: italic;
+    color: gray;
+    margin-left: 5px;
+}
+
+button[type="submit"] {
+    background-color: #000;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 50%;
+}
+
+button[type="submit"]:hover {
+    background-color: #000;
+    color: #ffbd39;
+}
+
+fieldset {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-top: 1px solid #000;
+}
+
+legend {
+    margin: 0 10px;
+    padding: 5px 10px;
+    border: none;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-radius: 10px;
+    background-color: #ffbd39;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    color: #000;
+}
+
+input[type="text"],
+input[type="date"] {
+    border: none;
+    border-bottom: 1px solid #000;
+    border-radius: 0px;
+}
+
+select, textarea{
+    border-radius: 3px;
+    border: 1px solid #000
+}
+
+
+input[required],
+textarea[required],
+select[required] {
+    border-left: 1px solid;
+}
+
+input[type="text"]::placeholder,
+input[type="date"]::placeholder,
+select,
+textarea {
+    color: #000;
+    font-size: small;
+}
+
+/* input:valid {
+    border-bottom: 2px solid green;
+} */
+
+input:invalid {
+    border-bottom: 2px solid red;
+}
+
+h3{
+    padding: 20px 0;
+    font-size: 2rem;
+}

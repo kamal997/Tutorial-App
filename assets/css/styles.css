@@ -1,84 +1,161 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
 
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Helvetica, Arial, "Poppins";
-    line-height: 1.6;
-    color: #000;
-    /* max-width: 1200px; */
-    margin: 0 auto;
+  font-family: Helvetica, Arial, "Poppins";
+  line-height: 1.6;
+  color: #000;
+  max-width: 1200px;
+  margin: 0 auto 5%;
 }
 
 /* Asidesbereich  */
 aside {
-    background-color: #eee;
+  background-color: #eee;
 }
 
 /* Navigationsbereich  */
 nav {
-    background-color: #ffbd39;
-    padding: 10px;
+  padding: 15px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
 }
-
 nav a {
-    font-weight: bold;
-    padding: 10px;
-    text-decoration: none;
-    color: #333;
-}
-
-nav a:hover {
-    color: #fff;
-    background-color: #ffbd39;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: #333;
 }
 
 nav a.active {
-    color: #fff;
-    background-color: #ffbd39;
+  color: #ffbd39;
 }
 
+nav a:hover {
+  color: #ffbd39;
+}
 
 /* table styles*/
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
 }
 
 td,
 th {
-    padding: 12px 15px;
-    text-align: center;
-    border: 1px solid #000;
+  padding: 12px 15px;
+  text-align: center;
+  border: 1px solid #000;
 }
 
 thead {
-    background-color: #000;
-    color: #ffbd39;
-    font-weight: bold;
+  background-color: #000;
+  color: #ffbd39;
+  font-weight: bold;
 }
 
 tfoot {
-    background-color: #fff;
-    color: #ffbd39;
+  background-color: #fff;
+  color: #ffbd39;
 }
 
 tbody tr:nth-child(odd) {
-    background-color: #ffcf6f;
-    color: #000;
+  background-color: #ffcf6f;
+  color: #000;
 }
 
 tbody tr:nth-child(even) {
-    background-color: #f2f2f2;
-    color: #000;
+  background-color: #f2f2f2;
+  color: #000;
 }
 
 tfoot td {
-    text-align: right;
+  text-align: right;
+}
+
+/* Footer styles */
+footer {
+  color: #000;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  border-top: 1px solid #000;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: #fff;
+}
+
+footer p {
+  margin: 10px;
+}
+
+footer span {
+  color: #ffbd39;
+}
+
+footer a {
+  color: #ffbd39;
+}
+
+footer a:hover {
+  color: #000;
+}
+
+/* Tutorials styles*/
+
+main section {
+  width: 100%;
+  display: inline-block;
+}
+
+div.tutorials_details {
+  width: 40%;
+  float: left;
+}
+div.tutorials_info {
+  width: 60%;
+  float: left;
+  margin-top: 50px;
+}
+
+/* Tutorial styles*/
+.tutorial_section {
+  padding: 10px;
+  margin: 0 auto;
+}
+div.single_tutorial_detail {
+  width: 40%;
+  float: left;
+}
+div.single_tutorial_info {
+  width: 60%;
+  float: left;
+}
+div.single_tutorial_info img {
+  width: 100%;
+}
+
+/* header styles*/
+header {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+  padding: 20px 0;
+  border-bottom: 1px solid #000;
+}
+.logoSection a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
 }

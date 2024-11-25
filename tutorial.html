@@ -1,92 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutorials-App</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tutorials-App</title>
-  <link rel="stylesheet" href="./assets/css/styles.css">
-</head>
+  <body>
+    <header>
+      <section class="logoSection">
+        <a href="./list.html">
+          <img
+            class="mr-2"
+            src="./assets/img/logo.png"
+            width="50"
+            height="50"
+            alt="Tutorial-App"
+          />
+          <h1>Tutorial-App</h1>
+        </a>
+      </section>
+      <nav>
+        <a href="list.html">Kategorien</a>
+        <a href="tutorials.html">Tutorials</a>
+        <a href="tutorial.html" class="active">Tutorial</a>
+        <a href="form.html"> Tutorial hizufügen</a>
+      </nav>
+    </header>
 
-<body>
-  <header>
-    <img src="./assets/img/logo.png" alt="App-Logo" width="50" height="50" />
-    <h1>Tutorial-App</h1>
-    <nav>
-      <a href="list.html">Kategorien</a> |
-      <a href="tutorials.html">Tutorials</a> |
-      <a href="tutorial.html" class="active">Tutorial</a> |
-      <a href="form.html"> Tutorial hizufügen</a>
-    </nav>
-  </header>
-  <main>
-    <h3>Node.js-Schnelleeinstieg</h3>
-    <p><strong>Datum:</strong>15.08.2020</p>
-    <p><strong>Dauer:</strong> 2 Std. 35 Min</p>
-    <section>
-      <figure>
-        <img src="./assets/img/nodjs.png" alt="Logo des Tutorial" width="240" height="240" />
-        <figcaption>Abbilding1: Node.js</figcaption>
-      </figure>
-    </section>
-    <video width="400" height="300" controls>
-      <source src="./assets/vid/Nodejs-Ultimate-Beginners-Guide.mp4.mp4" type="video/mp4" />
-    </video>
-    <table border="2">
-      <thead>
-        <tr>
-          <th>Name des Kapital</th>
-          <th>Beschreibung</th>
-          <th>Dauer</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Einleitung</td>
-          <td>Einleitende Worte zum Thema sowie das Aufsetzen</td>
-          <td>10 Min.</td>
-        </tr>
-        <tr>
-          <td>"Hello World"</td>
-          <td>Erstes Testprogram inklusive Laufzeitumgebung</td>
-          <td>20 Min.</td>
-        </tr>
-        <tr>
-          <td>Modulsystem</td>
-          <td>Eröterund des Modulsystem zur Strukturierung von Quellcode</td>
-          <td>30 Min.</td>
-        </tr>
-        <tr>
-          <td>Abschluss</td>
-          <td>Vorstellung von ergännzenden Materialien</td>
-          <td>5 Min.</td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <td colspan="2"></td>
-          <td><strong>1 Std. 5 Min.</strong></td>
-        </tr>
-      </tfoot>
-    </table>
-  </main>
+    <main>
+      <section class="tutorial_section">
+        <div class="single_tutorial_detail">
+          <h3>Node.js-Schnelleeinstieg</h3>
+          <br />
+          <p><strong>Datum:</strong>15.08.2020</p>
+          <p><strong>Dauer:</strong> 2 Std. 35 Min</p>
+        </div>
+        <div class="single_tutorial_info">
+          <figure>
+            <img
+              src="./assets/img/Nodejs-Architecture.png"
+              alt="Logo des Tutorial"
+            />
+            <figcaption>Abbilding1: Node.js</figcaption>
+          </figure>
+        </div>
+      </section>
 
-  <aside>
-    <h3>New Tutorials</h3>
-    <ul>
-      <li>
-        Node.js: Der schnelle Einstieg, 28. sep. 2023 - Dauer: 3 std. 5min
-      </li>
-      <li>SQL-Abfragen: 28. okt. 2022 - Dauer: 1 std. 5min</li>
-      <li>
-        Integral: unbestimmte Integral, 28. sep. 2025 - Dauer: 2 std. 5min
-      </li>
-    </ul>
-  </aside>
-  <footer>
-    Alle Rechte vorbehalten. Inhalte dürfen ohne ausdrückliche schriftliche
-    Genehmigung nicht kopiert oder vervielfältigt werden.&copy;
-  </footer>
-</body>
+      <video style="width: 100%" controls>
+        <source
+          src="./assets/vid/Nodejs-Ultimate-Beginners-Guide.mp4.mp4"
+          type="video/mp4"
+        />
+      </video>
 
+      <table border="2">
+        <thead>
+          <tr>
+            <th>Name des Kapital</th>
+            <th>Beschreibung</th>
+            <th>Dauer</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Einleitung</td>
+            <td>Einleitende Worte zum Thema sowie das Aufsetzen</td>
+            <td>10 Min.</td>
+          </tr>
+          <tr>
+            <td>"Hello World"</td>
+            <td>Erstes Testprogram inklusive Laufzeitumgebung</td>
+            <td>20 Min.</td>
+          </tr>
+          <tr>
+            <td>Modulsystem</td>
+            <td>Eröterund des Modulsystem zur Strukturierung von Quellcode</td>
+            <td>30 Min.</td>
+          </tr>
+          <tr>
+            <td>Abschluss</td>
+            <td>Vorstellung von ergännzenden Materialien</td>
+            <td>5 Min.</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2"></td>
+            <td><strong>1 Std. 5 Min.</strong></td>
+          </tr>
+        </tfoot>
+      </table>
+    </main>
+
+    <aside>
+      <h3>Neueste Tutorials</h3>
+      <ul>
+        <li>
+          <strong>Node.js - Schnelleinstieg</strong><br />
+          (15. Okt. 2024, 2 Std. 35 Min.)
+        </li>
+        <li>
+          <strong>React.js - Der einfache Einstieg</strong><br />
+          (12. Sept. 2024, 3 Std. 10 Min.)
+        </li>
+        <li>
+          <strong>HTML & CSS - Die Basics</strong><br />
+          (1. Juli 2024, 1 Std. 45 Min.)
+        </li>
+      </ul>
+    </aside>
+    <footer>
+      <p>
+        &copy; 2024 <span>Tutorial-App.</span> Alle Rechte vorbehalten. Mit
+        Liebe gemacht. Besuchen Sie unsere
+        <a href="https://kamalidris.dreamhosters.com" target="_blank">Website</a
+        >.
+      </p>
+    </footer>
+  </body>
 </html>
