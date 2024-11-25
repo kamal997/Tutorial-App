@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutorial-App</title>
+  </head>
+  <body>
+    <header>
+      <img src="./images/logo.png" alt="App-Logo" width="50" height="50" />
+      <h1>Tutorial-App</h1>
+      <nav>
+        <a href="list.html">Kategorien</a> |
+        <a href="tutorials.html">Tutorials</a> |
+        <a href="tutorial.html">Tutorial</a> |
+        <a href="form.html"> Tutorial hizufügen</a>
+      </nav>
+    </header>
+    <main>
+      <h3>Hinzufügen eines neuen Tutorial</h3>
+      <!-- Formular -->
+      <form
+        action="https://labs.inf.fh-dortmund.de/tutorialService/testCreateTutorial.php"
+        method="POST"
+      >
+        <fieldset>
+          <legend>Tutorial Information:</legend>
+          <label for="name">Titel: </label>
+          <br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            minlength="4"
+            maxlength="20"
+            placeholder="Titel eingeben"
+            pattern="[A-Z][a-zA-Z]{3,19}"
+            title="Der Titel muss mit einem Großbuchstaben beginnen 
+          und zwischen 4 und 20 Zeichen lang sein."
+          />
+          <br />
+          <label for="language"> Sprache</label>
+          <br />
+          <select name="language" id="language" required>
+            <option disabled selected>Wählen Sie eine Sprache aus</option>
+            <option value="en">Englisch</option>
+            <option value="de">Deutsch</option>
+            <option value="es">Spanisch</option>
+            <option value="fr">Französisch</option>
+          </select>
+          <br />
+          <label for="categories">Kategorien</label>
+          <br />
+          <input
+            type="text"
+            required
+            name="categories"
+            id="categories"
+            placeholder="Kategorie eingeben"
+            pattern="^[a-zA-Z0-9\s]+(,[a-zA-Z0-9\s]+)*$"
+            title="Bitte geben Sie 1-n Kategorien als kommaseparierte Liste ein,
+          die nicht mit einem Komma enden."
+          />
+          <br />
+          <label for="description">Beschreibung</label>
+          <br />
+          <textarea
+            type="text"
+            name="description"
+            id="descraption"
+            required
+            minlength="40"
+            placeholder="Bitte geben Sie die Beschreibung ein"
+          ></textarea>
+          <br />
+        </fieldset>
+        <fieldset>
+          <legend>Zeitliche Information:</legend>
+          <label for="duration"> Dauer</label>
+          <br />
+          <input
+            type="text"
+            name="duration"
+            id="duration"
+            pattern="(0[1-9]:[0-5][0-9]|00:[2-5][0-9]|1[0-5]:[0-5][0-9])"
+            title="Geben Sie die Dauer im Format MM:SS ein, zwischen 00:20 und 15:59 Minuten"
+            placeholder="Geben Sie die Dauer im Format MM:SS ein"
+          />
+          <br />
+          <label for="date">Veröffentlichung</label>
+          <br />
+          <input
+            type="date"
+            id="date"
+            name="date"
+            required
+            placeholder="Geben Sie den Datum ein"
+          />
+        </fieldset>
+        <fieldset>
+          <legend>Inhalt Information:</legend>
+
+          <label for="type">Inhalttyp:</label>
+          <br />
+          <select name="type" id="type" required>
+            <option value="" disabled selected>
+              --wählen Sie den Inhaltstyp--
+            </option>
+            <option value="text">Text-Tutorial</option>
+            <option value="video">Video-Tutorial</option>
+          </select>
+          <br />
+          <label for="content">Inhaltsdetails</label>
+          <br />
+          <input
+            type="text"
+            id="content"
+            name="content"
+            required
+            placeholder="Geben Sie eine URL oder ein text ein"
+          />
+        </fieldset>
+        <br />
+        <button type="submit">Hinzufügen</button>
+      </form>
+    </main>
+    <aside>
+      <h3>New Tutorials</h3>
+      <ul>
+        <li>
+          Node.js: Der schnelle Einstieg, 28. sep. 2023 - Dauer: 3 std. 5min
+        </li>
+        <li>SQL-Abfragen: 28. okt. 2022 - Dauer: 1 std. 5min</li>
+        <li>
+          Integral: unbestimmte Integral, 28. sep. 2025 - Dauer: 2 std. 5min
+        </li>
+      </ul>
+    </aside>
+    <footer>
+      &copy;Alle Rechte vorbehalten. Inhalte dürfen ohne ausdrückliche
+      schriftliche Genehmigung nicht kopiert oder vervielfältigt werden.
+    </footer>
+  </body>
+</html>

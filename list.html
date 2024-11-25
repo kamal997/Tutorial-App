@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutorials-App</title>
+  </head>
+  <body>
+    <header>
+      <img src="./images/logo.png" alt="App-Logo" width="50" height="50" />
+      <h1>Tutorial-App</h1>
+      <nav>
+        <a href="list.html">Kategorien</a> |
+        <a href="tutorials.html">Tutorials</a> |
+        <a href="tutorial.html">Tutorial</a> |
+        <a href="form.html"> Tutorial hizufügen</a>
+      </nav>
+    </header>
+    <main>
+      <h2>Kategorien</h2>
+      <fieldset>
+        <legend>Suche Form:</legend>
+        <!-- Formular -->
+        <form
+          action="https://labs.inf.fh-dortmund.de/tutorialService/testTutorialSearch.php"
+          method="GET"
+        >
+          <label for="search">Titel des Tutorials:</label>
+          <br />
+          <input
+            type="text"
+            id="search"
+            name="search"
+            required
+            minlength="4"
+            maxlength="20"
+            placeholder="Geben Sie einen Titel ein..."
+            pattern="[A-Z][a-zA-Z]{3,19}"
+            title="Der Titel muss mit einem Großbuchstaben beginnen und zwischen 4 und 20 Zeichen lang sein."
+          />
+          <button type="submit">Suchen</button>
+        </form>
+      </fieldset>
+      <ol>
+        <li>
+          <a href="tutorials.html">
+            <img
+              src="./images/dat.png"
+              alt="Datenbanken Logo"
+              width="20"
+              height="20"
+            />
+            Datenbanken
+          </a>
+        </li>
+        <li>
+          <a href="tutorials.html">
+            <img
+              src="./images/math.png"
+              alt="Mathe Logo"
+              width="20"
+              height="20"
+            />
+            Mathe 4
+          </a>
+        </li>
+        <li>
+          <a href="tutorials.html">
+            <img
+              src="./images/web.png"
+              alt="Web-Entwicklung Logo"
+              width="20"
+              height="20"
+            />
+            Web-Entwicklung
+          </a>
+        </li>
+      </ol>
+    </main>
+    <!-- Neue Tutorials -->
+    <aside>
+      <h3>Neue Tutorials</h3>
+      <ul>
+        <li>
+          Node.js: Der schnelle Einstieg, 28. Sep. 2023 - Dauer: 3 Std. 5 Min
+        </li>
+        <li>SQL-Abfragen: 28. Okt. 2022 - Dauer: 1 Std. 5 Min</li>
+        <li>
+          Integral: Unbestimmtes Integral, 28. Sep. 2025 - Dauer: 2 Std. 5 Min
+        </li>
+      </ul>
+    </aside>
+
+    <!-- Footer -->
+    <footer>
+      &copy; Alle Rechte vorbehalten. Inhalte dürfen ohne ausdrückliche
+      schriftliche Genehmigung nicht kopiert oder vervielfältigt werden.
+    </footer>
+  </body>
+</html>
