@@ -1,0 +1,84 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, Arial, "Poppins";
+    line-height: 1.6;
+    color: #000;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+}
+
+/* Asidesbereich  */
+aside {
+    background-color: #eee;
+}
+
+/* Navigationsbereich  */
+nav {
+    background-color: #ffbd39;
+    padding: 10px;
+}
+
+nav a {
+    font-weight: bold;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+nav a:hover {
+    color: #fff;
+    background-color: #ffbd39;
+}
+
+nav a.active {
+    color: #fff;
+    background-color: #ffbd39;
+}
+
+
+/* table styles*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+td,
+th {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+thead {
+    background-color: #000;
+    color: #ffbd39;
+    font-weight: bold;
+}
+
+tfoot {
+    background-color: #fff;
+    color: #ffbd39;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffcf6f;
+    color: #000;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+    color: #000;
+}
+
+tfoot td {
+    text-align: right;
+}
