@@ -88,8 +88,3 @@ textarea {
 input:invalid {
     border-bottom: 2px solid red;
 }
-
-h3{
-    padding: 20px 0;
-    font-size: 2rem;
-}

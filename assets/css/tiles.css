@@ -1,0 +1,39 @@
+ol {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 25px 0;
+}
+ol li {
+  border: 1px solid #000;
+  border-radius: 10px;
+  display: flex;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+img {
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 10px;
+}
+ol li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: #000;
+  background-color: #fff;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+ol li a:hover {
+  transform: scale(1.04);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tutorials-App</title>
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/flexbox.css" />
   </head>
 
   <body>
@@ -28,89 +29,92 @@
         <a href="form.html"> Tutorial hizufügen</a>
       </nav>
     </header>
+    <div>
+      <main>
+        <section class="tutorial_section">
+          <div class="single_tutorial_detail">
+            <h2>Node.js-Schnelleeinstieg</h2>
+            <br />
+            <p><strong>Datum:</strong>15.08.2020</p>
+            <p><strong>Dauer:</strong> 2 Std. 35 Min</p>
+          </div>
+          <div class="single_tutorial_info">
+            <figure>
+              <img
+                src="./assets/img/Nodejs-Architecture.png"
+                alt="Logo des Tutorial"
+              />
+              <figcaption>Abbilding1: Node.js</figcaption>
+            </figure>
+          </div>
+        </section>
 
-    <main>
-      <section class="tutorial_section">
-        <div class="single_tutorial_detail">
-          <h3>Node.js-Schnelleeinstieg</h3>
-          <br />
-          <p><strong>Datum:</strong>15.08.2020</p>
-          <p><strong>Dauer:</strong> 2 Std. 35 Min</p>
-        </div>
-        <div class="single_tutorial_info">
-          <figure>
-            <img
-              src="./assets/img/Nodejs-Architecture.png"
-              alt="Logo des Tutorial"
-            />
-            <figcaption>Abbilding1: Node.js</figcaption>
-          </figure>
-        </div>
-      </section>
+        <video style="width: 100%" controls>
+          <source
+            src="./assets/vid/Nodejs-Ultimate-Beginners-Guide.mp4.mp4"
+            type="video/mp4"
+          />
+        </video>
 
-      <video style="width: 100%" controls>
-        <source
-          src="./assets/vid/Nodejs-Ultimate-Beginners-Guide.mp4.mp4"
-          type="video/mp4"
-        />
-      </video>
+        <table border="2">
+          <thead>
+            <tr>
+              <th>Name des Kapital</th>
+              <th>Beschreibung</th>
+              <th>Dauer</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Einleitung</td>
+              <td>Einleitende Worte zum Thema sowie das Aufsetzen</td>
+              <td>10 Min.</td>
+            </tr>
+            <tr>
+              <td>"Hello World"</td>
+              <td>Erstes Testprogram inklusive Laufzeitumgebung</td>
+              <td>20 Min.</td>
+            </tr>
+            <tr>
+              <td>Modulsystem</td>
+              <td>
+                Eröterund des Modulsystem zur Strukturierung von Quellcode
+              </td>
+              <td>30 Min.</td>
+            </tr>
+            <tr>
+              <td>Abschluss</td>
+              <td>Vorstellung von ergännzenden Materialien</td>
+              <td>5 Min.</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="2"></td>
+              <td><strong>1 Std. 5 Min.</strong></td>
+            </tr>
+          </tfoot>
+        </table>
+      </main>
 
-      <table border="2">
-        <thead>
-          <tr>
-            <th>Name des Kapital</th>
-            <th>Beschreibung</th>
-            <th>Dauer</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Einleitung</td>
-            <td>Einleitende Worte zum Thema sowie das Aufsetzen</td>
-            <td>10 Min.</td>
-          </tr>
-          <tr>
-            <td>"Hello World"</td>
-            <td>Erstes Testprogram inklusive Laufzeitumgebung</td>
-            <td>20 Min.</td>
-          </tr>
-          <tr>
-            <td>Modulsystem</td>
-            <td>Eröterund des Modulsystem zur Strukturierung von Quellcode</td>
-            <td>30 Min.</td>
-          </tr>
-          <tr>
-            <td>Abschluss</td>
-            <td>Vorstellung von ergännzenden Materialien</td>
-            <td>5 Min.</td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr>
-            <td colspan="2"></td>
-            <td><strong>1 Std. 5 Min.</strong></td>
-          </tr>
-        </tfoot>
-      </table>
-    </main>
-
-    <aside>
-      <h3>Neueste Tutorials</h3>
-      <ul>
-        <li>
-          <strong>Node.js - Schnelleinstieg</strong><br />
-          (15. Okt. 2024, 2 Std. 35 Min.)
-        </li>
-        <li>
-          <strong>React.js - Der einfache Einstieg</strong><br />
-          (12. Sept. 2024, 3 Std. 10 Min.)
-        </li>
-        <li>
-          <strong>HTML & CSS - Die Basics</strong><br />
-          (1. Juli 2024, 1 Std. 45 Min.)
-        </li>
-      </ul>
-    </aside>
+      <aside>
+        <h3>Neueste Tutorials</h3>
+        <ul>
+          <li>
+            <strong>Node.js - Schnelleinstieg</strong><br />
+            (15. Okt. 2024, 2 Std. 35 Min.)
+          </li>
+          <li>
+            <strong>React.js - Der einfache Einstieg</strong><br />
+            (12. Sept. 2024, 3 Std. 10 Min.)
+          </li>
+          <li>
+            <strong>HTML & CSS - Die Basics</strong><br />
+            (1. Juli 2024, 1 Std. 45 Min.)
+          </li>
+        </ul>
+      </aside>
+    </div>
     <footer>
       <p>
         &copy; 2024 <span>Tutorial-App.</span> Alle Rechte vorbehalten. Mit

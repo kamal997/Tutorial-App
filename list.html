@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tutorials-App</title>
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/flexbox.css" />
+    <link rel="stylesheet" href="./assets/css/tiles.css" />
   </head>
   <body>
     <header>
@@ -27,77 +29,100 @@
         <a href="form.html"> Tutorial hizufügen</a>
       </nav>
     </header>
-    <main>
-      <h2>Kategorien</h2>
-      <fieldset>
-        <legend>Suche Form:</legend>
-        <!-- Formular -->
-        <form
-          action="https://labs.inf.fh-dortmund.de/tutorialService/testTutorialSearch.php"
-          method="GET"
-        >
-          <label for="search">Titel des Tutorials:</label>
-          <br />
-          <input
-            type="text"
-            id="search"
-            name="search"
-            required
-            minlength="4"
-            maxlength="20"
-            placeholder="Geben Sie einen Titel ein..."
-            pattern="[A-Z][a-zA-Z]{3,19}"
-            title="Der Titel muss mit einem Großbuchstaben beginnen und zwischen 4 und 20 Zeichen lang sein."
-          />
-          <button type="submit">Suchen</button>
-        </form>
-      </fieldset>
-      <ol>
-        <li>
-          <a href="tutorials.html">
-            <img
-              src="./assets/img/Web-Entwicklung.png"
-              alt="Web_Entwicklung_image"
-              width="20"
-              height="20"
-            />
-            Web-Entwicklung</a
-          >
-        </li>
-        <li>
-          <a href="tutorials.html">
-            <img
-              src="./assets/img/datenbanken.png"
-              alt="datenbanken_image"
-              width="20"
-              height="20"
-            />
-            Datenbanken</a
-          >
-        </li>
-        <li>
-          <a href="tutorials.html">
-            <img
-              src="./assets/img/Künstliche Intelligenz.png"
-              alt="künstliche_intelligenz_image"
-              width="20"
-              height="20"
-            />
-            Künstliche Intelligenz</a
-          >
-        </li>
-      </ol>
-    </main>
-    <!-- Neue Tutorials -->
-    <aside>
-      <h3>Neueste Tutorials</h3>
-      <ul>
-          <li><strong>Node.js - Schnelleinstieg</strong><br> (15. Okt. 2024, 2 Std. 35 Min.)</li>
-          <li><strong>React.js - Der einfache Einstieg</strong><br> (12. Sept. 2024, 3 Std. 10 Min.)</li>
-          <li><strong>HTML & CSS - Die Basics</strong><br> (1. Juli 2024, 1 Std. 45 Min.)</li>
-      </ul>
-  </aside>
-
+    <div>
+      <main>
+        <section>
+          <h2>Kategorien</h2>
+          <fieldset class="fiSucheForm">
+            <legend class="leSucheForm">Suche Form:</legend>
+            <!-- Formular -->
+            <form
+              action="https://labs.inf.fh-dortmund.de/tutorialService/testTutorialSearch.php"
+              method="GET"
+            >
+              <label for="search">Titel des Tutorials:</label>
+              <input
+                type="text"
+                id="search"
+                name="search"
+                required
+                class="iptSucheForm"
+                minlength="4"
+                maxlength="20"
+                placeholder="Geben Sie einen Titel ein..."
+                pattern="[A-Z][a-zA-Z]{3,19}"
+                title="Der Titel muss mit einem Großbuchstaben beginnen und zwischen 4 und 20 Zeichen lang sein."
+              />
+              <button class="btnSucheForm" type="submit">Suchen</button>
+            </form>
+          </fieldset>
+          <ol>
+            <li>
+              <a href="tutorials.html">
+                <img
+                  src="./assets/img/Web-Entwicklung.png"
+                  alt="Web_Entwicklung_image"
+                  width="60"
+                  height="60"
+                />
+                Web-Entwicklung</a
+              >
+            </li>
+            <li>
+              <a href="tutorials.html">
+                <img
+                  src="./assets/img/datenbanken.png"
+                  alt="datenbanken_image"
+                  width="60"
+                  height="60"
+                />
+                Datenbanken</a
+              >
+            </li>
+            <li>
+              <a href="tutorials.html">
+                <img
+                  src="./assets/img/Künstliche Intelligenz.png"
+                  alt="künstliche_intelligenz_image"
+                  width="60"
+                  height="60"
+                />
+                Künstliche Intelligenz</a
+              >
+            </li>
+            <li>
+              <a href="tutorials.html">
+                <img
+                  src="./assets/img/datenbanken.png"
+                  alt="datenbanken_image"
+                  width="60"
+                  height="60"
+                />
+                Programmierung</a
+              >
+            </li>
+          </ol>
+        </section>
+      </main>
+      <!-- Neue Tutorials -->
+      <aside>
+        <h3>Neueste Tutorials</h3>
+        <ul>
+          <li>
+            <strong>Node.js - Schnelleinstieg</strong><br />
+            (15. Okt. 2024, 2 Std. 35 Min.)
+          </li>
+          <li>
+            <strong>React.js - Der einfache Einstieg</strong><br />
+            (12. Sept. 2024, 3 Std. 10 Min.)
+          </li>
+          <li>
+            <strong>HTML & CSS - Die Basics</strong><br />
+            (1. Juli 2024, 1 Std. 45 Min.)
+          </li>
+        </ul>
+      </aside>
+    </div>
     <!-- Footer -->
     <footer>
       <p>
