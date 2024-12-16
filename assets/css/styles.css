@@ -189,3 +189,29 @@ header {
   border: none;
   border-radius: 10px;
 }
+
+
+@media only screen and (max-width: 768px) {
+  main {
+    width: 100%!important;
+  }
+  aside {
+    width: 100%!important;
+  }
+  .col{
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 768px) and (min-width: 480px) {
+  header h1{
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  header h1{
+    display: none;
+  }
+  nav{
+    flex-direction: column;
+  }
+}

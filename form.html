@@ -30,132 +30,143 @@
         <a href="form.html" class="active"> Tutorial hizufügen</a>
       </nav>
     </header>
-    <main>
-      <h2>Hinzufügen eines neuen Tutorial</h2>
-      <!-- Formular -->
-      <form
-        action="https://labs.inf.fh-dortmund.de/tutorialService/testCreateTutorial.php"
-        method="POST"
-      >
-        <fieldset>
-          <legend>Tutorial Information:</legend>
-          <label for="name" class="required">
-            Titel:
-            <input
-              type="text"
-              id="name"
-              name="name"
-              required
-              minlength="4"
-              maxlength="20"
-              placeholder="Titel eingeben"
-              pattern="[A-Z][a-zA-Z]{3,19}"
-              title="Der Titel muss mit einem Großbuchstaben beginnen 
+    <div class="col">
+      <main>
+        <h2>Hinzufügen eines neuen Tutorial</h2>
+        <!-- Formular -->
+        <form
+          action="https://labs.inf.fh-dortmund.de/tutorialService/testCreateTutorial.php"
+          method="POST"
+        >
+          <fieldset>
+            <legend>Tutorial Information:</legend>
+            <label for="name" class="required">
+              Titel:
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                minlength="4"
+                maxlength="20"
+                placeholder="Titel eingeben"
+                pattern="[A-Z][a-zA-Z]{3,19}"
+                title="Der Titel muss mit einem Großbuchstaben beginnen 
           und zwischen 4 und 20 Zeichen lang sein."
-            />
-          </label>
+              />
+            </label>
 
-          <label for="language" class="required">
-            Sprache
-            <select name="language" id="language" required>
-              <option disabled selected>Wählen Sie eine Sprache aus</option>
-              <option value="en">Englisch</option>
-              <option value="de">Deutsch</option>
-              <option value="es">Spanisch</option>
-              <option value="fr">Französisch</option>
-            </select>
-          </label>
+            <label for="language" class="required">
+              Sprache
+              <select name="language" id="language" required>
+                <option disabled selected>Wählen Sie eine Sprache aus</option>
+                <option value="en">Englisch</option>
+                <option value="de">Deutsch</option>
+                <option value="es">Spanisch</option>
+                <option value="fr">Französisch</option>
+              </select>
+            </label>
 
-          <label for="categories" class="required">
-            Kategorien
-            <input
-              type="text"
-              required
-              name="categories"
-              id="categories"
-              placeholder="Kategorie eingeben"
-              pattern="^[a-zA-Z0-9\s]+(,[a-zA-Z0-9\s]+)*$"
-              title="Bitte geben Sie 1-n Kategorien als kommaseparierte Liste ein,
+            <label for="categories" class="required">
+              Kategorien
+              <input
+                type="text"
+                required
+                name="categories"
+                id="categories"
+                placeholder="Kategorie eingeben"
+                pattern="^[a-zA-Z0-9\s]+(,[a-zA-Z0-9\s]+)*$"
+                title="Bitte geben Sie 1-n Kategorien als kommaseparierte Liste ein,
           die nicht mit einem Komma enden."
-            />
-          </label>
+              />
+            </label>
 
-          <label for="description" class="required">
-            Beschreibung
-            <textarea
-              type="text"
-              name="description"
-              id="descraption"
-              required
-              minlength="40"
-              placeholder="Bitte geben Sie die Beschreibung ein"
-            ></textarea>
-          </label>
-        </fieldset>
+            <label for="description" class="required">
+              Beschreibung
+              <textarea
+                type="text"
+                name="description"
+                id="descraption"
+                required
+                minlength="40"
+                placeholder="Bitte geben Sie die Beschreibung ein"
+              ></textarea>
+            </label>
+          </fieldset>
 
-        <fieldset>
-          <legend>Zeitliche Information:</legend>
-          <label for="duration">
-            Dauer
-            <input
-              type="text"
-              name="duration"
-              id="duration"
-              pattern="(0[1-9]:[0-5][0-9]|00:[2-5][0-9]|1[0-5]:[0-5][0-9])"
-              title="Geben Sie die Dauer im Format MM:SS ein, zwischen 00:20 und 15:59 Minuten"
-              placeholder="Geben Sie die Dauer im Format MM:SS ein"
-            />
-          </label>
+          <fieldset>
+            <legend>Zeitliche Information:</legend>
+            <label for="duration">
+              Dauer
+              <input
+                type="text"
+                name="duration"
+                id="duration"
+                pattern="(0[1-9]:[0-5][0-9]|00:[2-5][0-9]|1[0-5]:[0-5][0-9])"
+                title="Geben Sie die Dauer im Format MM:SS ein, zwischen 00:20 und 15:59 Minuten"
+                placeholder="Geben Sie die Dauer im Format MM:SS ein"
+              />
+            </label>
 
-          <label for="date" class="required">
-            Veröffentlichung
-            <input
-              type="date"
-              id="date"
-              name="date"
-              required
-              placeholder="Geben Sie den Datum ein"
-            />
-          </label>
-        </fieldset>
+            <label for="date" class="required">
+              Veröffentlichung
+              <input
+                type="date"
+                id="date"
+                name="date"
+                required
+                placeholder="Geben Sie den Datum ein"
+              />
+            </label>
+          </fieldset>
 
-        <fieldset>
-          <legend>Inhalt Information:</legend>
-          <label for="type" class="required">
-            Inhalttyp:
-            <select name="type" id="type" required>
-              <option value="" disabled selected>
-                --wählen Sie den Inhaltstyp--
-              </option>
-              <option value="text">Text-Tutorial</option>
-              <option value="video">Video-Tutorial</option>
-            </select>
-          </label>
+          <fieldset>
+            <legend>Inhalt Information:</legend>
+            <label for="type" class="required">
+              Inhalttyp:
+              <select name="type" id="type" required>
+                <option value="" disabled selected>
+                  --wählen Sie den Inhaltstyp--
+                </option>
+                <option value="text">Text-Tutorial</option>
+                <option value="video">Video-Tutorial</option>
+              </select>
+            </label>
 
-          <label for="content" class="required">
-            Inhaltsdetails
-            <input
-              type="text"
-              id="content"
-              name="content"
-              required
-              placeholder="Geben Sie eine URL oder ein text ein"
-            />
-          </label>
-        </fieldset>
-        <div style="text-align: center">
-          <button type="submit">Hinzufügen</button>
-        </div>
-      </form>
-    </main>
-    <aside>
-      <h3>Neueste Tutorials</h3>
-      <ul>
-          <li><strong>Node.js - Schnelleinstieg</strong><br> (15. Okt. 2024, 2 Std. 35 Min.)</li>
-          <li><strong>React.js - Der einfache Einstieg</strong><br> (12. Sept. 2024, 3 Std. 10 Min.)</li>
-          <li><strong>HTML & CSS - Die Basics</strong><br> (1. Juli 2024, 1 Std. 45 Min.)</li>
-      </ul>
-  </aside>
+            <label for="content" class="required">
+              Inhaltsdetails
+              <input
+                type="text"
+                id="content"
+                name="content"
+                required
+                placeholder="Geben Sie eine URL oder ein text ein"
+              />
+            </label>
+          </fieldset>
+          <div style="text-align: center">
+            <button type="submit">Hinzufügen</button>
+          </div>
+        </form>
+      </main>
+      <aside>
+        <h3>Neueste Tutorials</h3>
+        <ul>
+          <li>
+            <strong>Node.js - Schnelleinstieg</strong><br />
+            (15. Okt. 2024, 2 Std. 35 Min.)
+          </li>
+          <li>
+            <strong>React.js - Der einfache Einstieg</strong><br />
+            (12. Sept. 2024, 3 Std. 10 Min.)
+          </li>
+          <li>
+            <strong>HTML & CSS - Die Basics</strong><br />
+            (1. Juli 2024, 1 Std. 45 Min.)
+          </li>
+        </ul>
+      </aside>
+    </div>
     <footer>
       <p>
         &copy; 2024 <span>Tutorial-App.</span> Alle Rechte vorbehalten. Mit
